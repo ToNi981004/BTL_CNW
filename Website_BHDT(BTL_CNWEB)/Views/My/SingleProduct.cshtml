@@ -3,6 +3,8 @@
     ViewBag.Title = "SingleProduct";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using Website_BHDT_BTL_CNWEB_.Models.MD_Entities;
+@model  SanPham
 <body>
     <div class="mainmenu-area">
         <div class="container">
@@ -17,13 +19,12 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="Index.cshtml">|||</a></li>
-                        <li><a href="Shop.html">Trang Cửa Hàng</a></li>
-                        <li  class="active"><a href="single-product.html">Sản Phẩm Bán Chạy Nhất</a></li>
-                        <li><a href="cart.html">Giỏ Hàng</a></li>
-                        <li><a href="checkout.html">Kiểm Tra</a></li>
-                        <li><a href="#">Thể Loại</a></li>
-                        <li><a href="#">SP_Khác</a></li>
+                        <li><a href="http://localhost:54665/My/Index">|||</a></li>
+                        <li><a href="http://localhost:54665/My/Shop">Danh Sách Sản Phẩm</a></li>
+                        <li class="active"><a href="http://localhost:54665/My/SingleProduct">Thông Tin Chi Tiết Sản Phẩm</a></li>
+                        <li><a href="http://localhost:54665/My/Cart">Giỏ Hàng</a></li>
+                        <li><a href="http://localhost:54665/My/Information">Thông Tin Giao Hàng</a></li>
+                        <li><a href="http://localhost:54665/My/Contacts">Liên Hệ</a></li>
 
                     </ul>
                 </div>
@@ -35,7 +36,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Shop</h2>
+                        <h2><b>Sản Phẩm</b></h2>
                     </div>
                 </div>
             </div>
@@ -56,33 +57,34 @@
                     </div>
 
                     <div class="single-sidebar">
-                        <h2 class="sidebar-title">Các Sản Phẩm</h2>
+                        <h2 class="sidebar-title">Các Sản Phẩm Khác</h2>
                         <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <img src="/Content/img/iphone-6-gold.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP03">Điện thoại iPhone 6 Cũ (16GB, 64GB)</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>2950000</ins> <del>3450000</del>
+                            </div>
+                        </div>
+
+                        <div class="thubmnail-recent">
+                            <img src="/Content/img/samsung-galaxy-s9-plus-cu-black.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP08">Điện thoại Samsung Galaxy S9 Plus Nhật Bản</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>10250000</ins> <del>10950000</del>
                             </div>
                         </div>
                         <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <img src="/Content/img/x7-do.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP15">Điện thoại Nokia X7 2018</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>5450000</ins> <del>5950000</del>
                             </div>
                         </div>
                         <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <img src="/Content/img/xiaomi-redmi-note-7-12.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP19">Điện thoại Xiaomi Redmi Note 7 (RAM 4GB, 6GB)</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
-                            </div>
-                        </div>
-                        <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$100.00</del>
+                                <ins>4450000</ins> <del>5450000</del>
                             </div>
                         </div>
                     </div>
@@ -90,11 +92,11 @@
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Bài Viết Gần Đây</h2>
                         <ul>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP14">SĐiện thoại Nokia 7 Plus</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP13">Điện thoại Nokia X6 cũ (Fullbox)</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP12">Điện thoại Nokia X5 - 2018 (3GB/32GB, 4GB/64GB)</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP11">Điện thoại Samsung Galaxy Note FE Cũ</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP10">Điện thoại Samsung Galaxy Note 8 cũ (Trả Bảo Hành)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,44 +104,50 @@
                 <div class="col-md-8">
                     <div class="product-content-right">
                         <div class="product-breadcroumb">
-                            <a href="">Trang Chủ</a>
-                            <a href="">Danh Mục</a>
-                            <a href="">Sony Smart TV - 2015</a>
+                            <a href="http://localhost:54665/My/Index">Trang Chủ</a>
+                            <a href="http://localhost:54665/My/Shop">Danh Mục</a>
+                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP10">Điện thoại Samsung Galaxy Note 8 cũ (Trả Bảo Hành)</a>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="/Content/img/product-2.jpg" alt="">
+                                        <img src="@Model.Anh" alt="">
                                     </div>
 
                                     <div class="product-gallery">
-                                        <img src="/Content/img/product-thumb-1.jpg" alt="">
-                                        <img src="/Content/img/product-thumb-2.jpg" alt="">
-                                        <img src="/Content/img/product-thumb-3.jpg" alt="">
+                                        <img src="@Model.Anh" alt="">
+                                        <img src="@Model.Anh" alt="">
+                                        <img src="@Model.Anh" alt="">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="product-inner">
-                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
+                                    <h2 class="product-name">@Model.TenSanPham</h2>
                                     <div class="product-inner-price">
-                                        <ins>$700.00</ins> <del>$100.00</del>
+                                        <ins> Giá:@Model.DonGiaB </ins> <del> @Model.DonGiaN </del>
                                     </div>
 
                                     <form action="" class="cart">
                                         <div class="quantity">
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
-                                        <button class="add_to_cart_button" type="submit">Thêm Vào Giỏ Hàng</button>
+                                        <button class="add_to_cart_button" type="submit">Thêm Vào Giỏ </button>
                                     </form>
 
-                                    <div class="product-inner-category">
-                                        <p>Category: <a href="">Summer</a>. Tags: <a href="">awesome</a>, <a href="">best</a>, <a href="">sale</a>, <a href="">shoes</a>. </p>
+                                    <div class="product-inner-price">
+                                        <p>
+                                            Hãng: @Model.Hang <br>
+                                            Bộ Nhớ: @Model.BoNhoTrong <br>
+                                            Chế Độ Bảo Hành: @Model.TGBaoHanh <br>
+                                            Tình trạng: @Model.TinhTrang % <br>
+                                            Xuất Xứ:@Model.XuatXu
+                                        </p>
                                     </div>
-                                    
+
                                     <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">
                                             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Mô Tả</a></li>
@@ -147,10 +155,28 @@
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                                <h2>Mô Tả Sản Phẩm</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>
+                                                <h2 class="sidebar-title">Thông Số Kỹ Thuật: </h2>
+                                                <p>
+                                                    <b>Hãng :</b> @Model.Hang <br>
+                                                    <b>Xuất Xứ :</b> @Model.XuatXu <br>
+                                                    <b>Màn Hình :</b>@Model.MaHinh <br>
+                                                    <b>Hệ Điều Hành :</b>@Model.HeDieuHanh <br>
+                                                    <b>Camera Sau :</b> @Model.CameraSau <br>
+                                                    <b>Camera Truoc :</b> @Model.CameraTruoc <br>
+                                                    <b>CPU : </b>@Model.CPU<br>
+                                                    <b>RAM : </b>@Model.RAM<br>
+                                                    <b>Bộ Nhớ Trong : </b>@Model.BoNhoTrong<br>
+                                                    <b>Thẻ SIM :</b> @Model.TheSim<br>
+                                                    <b>Dung Lượng Pin :</b> @Model.DungLuongPin<br>
+                                                    <b>Thiết Kế : </b>@Model.ThietKe
 
-                                                <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
+                                                </p>
+                                                <h2 class="sidebar-title"> Mô Tả Sản Phẩm </h2>
+                                                <p>
+
+                                                    @Model.MoTaSanPham
+
+                                                </p>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
                                                 <h2>Nhận Sét</h2>
@@ -185,91 +211,94 @@
                             <div class="related-products-carousel">
                                 <div class="single-product">
                                     <div class="product-f-image">
-                                        <img src="/Content/img/product-1.jpg" alt="">
+                                        <img src="/Content/img/xiaomi-redmi-note-7-pink.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                                            <a href="http://localhost:54665/My/Cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ </a>
+                                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP21" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Sony Smart TV - 2015</a></h2>
+                                    <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP21">Điện thoại Xiaomi Redmi Note 7</a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$700.00</ins> <del>$100.00</del>
+                                        <ins>3650000</ins> <del>4950000</del>
+                                    </div>
+                                </div>
+
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="/Content/img/xiaomi-mi-mix2-den.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="http://localhost:54665/My/Cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ </a>
+                                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP20" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP20">Điện thoại Xiaomi Mi Mix 2 (ROM Tiếng Việt)</a></h2>
+                                    <div class="product-carousel-price">
+                                        <ins>7450000</ins> <del>8450000</del>
+                                    </div>
+                                </div>
+
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="/Content/img/xiaomi-redmi-note-7-12.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="http://localhost:54665/My/Cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ </a>
+                                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP19" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP19">Điện thoại Xiaomi Redmi Note 7 (RAM 4GB, 6GB)</a></h2>
+
+                                    <div class="product-carousel-price">
+                                        <ins>4450000</ins> <del>5450000</del>
+                                    </div>
+                                </div>
+
+                                <div class="single-product">
+                                    <div class="product-f-image">
+                                        <img src="/Content/img/xiaomi-mi9.jpg" alt="">
+                                        <div class="product-hover">
+                                            <a href="http://localhost:54665/My/Cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ </a>
+                                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP18" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                                        </div>
+                                    </div>
+
+                                    <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP18">Điện thoại Xiaomi Mi 9 (RAM 6GB, 8GB)</a></h2>
+
+                                    <div class="product-carousel-price">
+                                        <ins>10950000</ins> <del>1295000</del>
                                     </div>
                                 </div>
                                 <div class="single-product">
                                     <div class="product-f-image">
-                                        <img src="/Content/img/product-2.jpg" alt="">
+                                        <img src="/Content/img/xiaomi-mi-mix3-den.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                                            <a href="http://localhost:54665/My/Cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ </a>
+                                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP17" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                                    <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP17">Điện thoại Xiaomi Mi Mix 3 (128GB, RAM 6, 8GB)</a></h2>
+
                                     <div class="product-carousel-price">
-                                        <ins>$899.00</ins> <del>$999.00</del>
+                                        <ins>10550000</ins> <del>12450000</del>
                                     </div>
                                 </div>
                                 <div class="single-product">
                                     <div class="product-f-image">
-                                        <img src="/Content/img/product-3.jpg" alt="">
+                                        <img src="/Content/img/xiaomi-black-shark-helo-black-shark-2-den.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                                            <a href="http://localhost:54665/My/Cart" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ </a>
+                                            <a href="http://localhost:54665/My/SingleProduct/?ID=SP16" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Apple new i phone 6</a></h2>
+                                    <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP16">Điện thoại Xiaomi Black Shark Helo </a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$400.00</ins> <del>$425.00</del>
-                                    </div>
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="/Content/img/product-4.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào giỏ Hàng</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Sony playstation microsoft</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$200.00</ins> <del>$225.00</del>
-                                    </div>
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="/Content/img/product-5.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Sony Smart Air Condtion</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$1200.00</ins> <del>$1355.00</del>
-                                    </div>
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="/Content/img/product-6.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ Hàng</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Samsung gallaxy note 4</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$400.00</ins>
+                                        <ins>10450000</ins><del>12450000</del>
                                     </div>
                                 </div>
                             </div>

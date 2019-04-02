@@ -1,4 +1,4 @@
-namespace Website_BHDT_BTL_CNWEB_.Models.Entities
+namespace Website_BHDT_BTL_CNWEB_.Models.MD_Entities
 {
     using System;
     using System.Collections.Generic;

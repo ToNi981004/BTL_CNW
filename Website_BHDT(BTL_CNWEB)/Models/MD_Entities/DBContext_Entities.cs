@@ -1,20 +1,21 @@
-namespace Website_BHDT_BTL_CNWEB_.Models.Entities
+namespace Website_BHDT_BTL_CNWEB_.Models.MD_Entities
 {
     using System;
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class MyDBContext : DbContext
+    public partial class DBContext_Entities : DbContext
     {
-        public MyDBContext()
-            : base("name=MyDBContext")
+        public DBContext_Entities()
+            : base("name=DBContext_Entities")
         {
         }
 
         public virtual DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
+        public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
 
@@ -57,6 +58,20 @@ namespace Website_BHDT_BTL_CNWEB_.Models.Entities
 
             modelBuilder.Entity<KhachHang>()
                 .Property(e => e.SDT_KH)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.MaBuuDien)
+                .IsFixedLength();
+
+            modelBuilder.Entity<NhaCungCap>()
+                .Property(e => e.IDNCC)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<NhaCungCap>()
+                .Property(e => e.SDT_NCC)
                 .IsFixedLength()
                 .IsUnicode(false);
 
