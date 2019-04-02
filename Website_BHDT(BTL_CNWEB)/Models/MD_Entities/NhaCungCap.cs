@@ -1,4 +1,4 @@
-namespace Website_BHDT_BTL_CNWEB_.Models.Entities
+namespace Website_BHDT_BTL_CNWEB_.Models.MD_Entities
 {
     using System;
     using System.Collections.Generic;
@@ -6,32 +6,29 @@ namespace Website_BHDT_BTL_CNWEB_.Models.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("NhanVien")]
-    public partial class NhanVien
+    [Table("NhaCungCap")]
+    public partial class NhaCungCap
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public NhanVien()
+        public NhaCungCap()
         {
-            HoaDons = new HashSet<HoaDon>();
+            SanPhams = new HashSet<SanPham>();
         }
 
         [Key]
         [StringLength(10)]
-        public string IDNhanVien { get; set; }
+        public string IDNCC { get; set; }
 
         [StringLength(50)]
-        public string TenNhanVien { get; set; }
+        public string TenNCC { get; set; }
 
-        [StringLength(3)]
-        public string GioiTinh_NV { get; set; }
-
-        [StringLength(50)]
-        public string ChucVu { get; set; }
+        [StringLength(200)]
+        public string DiaChi_NCC { get; set; }
 
         [StringLength(10)]
-        public string SDT_NV { get; set; }
+        public string SDT_NCC { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HoaDon> HoaDons { get; set; }
+        public virtual ICollection<SanPham> SanPhams { get; set; }
     }
 }

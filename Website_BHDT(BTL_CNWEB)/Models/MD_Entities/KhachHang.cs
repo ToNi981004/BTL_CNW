@@ -1,4 +1,4 @@
-namespace Website_BHDT_BTL_CNWEB_.Models.Entities
+namespace Website_BHDT_BTL_CNWEB_.Models.MD_Entities
 {
     using System;
     using System.Collections.Generic;
@@ -19,11 +19,17 @@ namespace Website_BHDT_BTL_CNWEB_.Models.Entities
         [StringLength(10)]
         public string IDKhachHang { get; set; }
 
-        [StringLength(50)]
-        public string TenKhachHang { get; set; }
+        [StringLength(20)]
+        public string Ho { get; set; }
+
+        [StringLength(20)]
+        public string Ten { get; set; }
 
         [StringLength(3)]
         public string GioiTinh_KH { get; set; }
+
+        [StringLength(50)]
+        public string TenCongTy { get; set; }
 
         [StringLength(10)]
         public string SDT_KH { get; set; }
@@ -31,7 +37,17 @@ namespace Website_BHDT_BTL_CNWEB_.Models.Entities
         [StringLength(200)]
         public string DiaChi_KH { get; set; }
 
-        public int? SoLanMua { get; set; }
+        [StringLength(50)]
+        public string ThanhPho { get; set; }
+
+        [StringLength(30)]
+        public string Quan { get; set; }
+
+        [StringLength(10)]
+        public string MaBuuDien { get; set; }
+
+        [StringLength(100)]
+        public string DiaChiEmail { get; set; }
 
         public double? TongTienMua { get; set; }
 

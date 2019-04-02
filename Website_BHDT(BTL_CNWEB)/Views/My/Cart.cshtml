@@ -3,6 +3,8 @@
     ViewBag.Title = "cart";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using Website_BHDT_BTL_CNWEB_.Models.MD_Entities;
+@model  List<SanPham>
 <body>
     <div class="mainmenu-area">
         <div class="container">
@@ -17,14 +19,12 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">|||</a></li>
-                        <li><a href="shop.html">Trang Cửa Hàng</a></li>
-                        <li><a href="single-product.html">Sản Phẩm Bán Chạy Nhất</a></li>
-                        <li class="active"><a href="cart.html">Giỏ Hàng</a></li>
-                        <li><a href="checkout.html">Kiểm Tra</a></li>
-                        <li><a href="#">Thể Loại</a></li>
-                        <li><a href="#">SP_Khác</a></li>
-
+                        <li><a href="http://localhost:54665/My/Index">|||</a></li>
+                        <li><a href="http://localhost:54665/My/Shop">Danh Sách Sản Phẩm</a></li>
+                        <li><a href="http://localhost:54665/My/SingleProduct">Thông Tin Chi Tiết Sản Phẩm</a></li>
+                        <li class="active"><a href="http://localhost:54665/My/Cart">Giỏ Hàng</a></li>
+                        <li><a href="http://localhost:54665/My/Information">Thông Tin Giao Hàng</a></li>
+                        <li><a href="http://localhost:54665/My/Contacts">Liên Hệ</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Giỏ Hàng</h2>
+                        <h2><b>Giỏ Hàng</b></h2>
                     </div>
                 </div>
             </div>
@@ -55,33 +55,34 @@
                     </div>
 
                     <div class="single-sidebar">
-                        <h2 class="sidebar-title">Các Sản Phẩm</h2>
+                        <h2 class="sidebar-title">Các Sản Phẩm Khác</h2>
                         <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                            <img src="/Content/img/iphone-6-gold.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP03">Điện thoại iPhone 6 Cũ (16GB, 64GB)</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>2950000</ins> <del>3450000</del>
+                            </div>
+                        </div>
+
+                        <div class="thubmnail-recent">
+                            <img src="/Content/img/samsung-galaxy-s9-plus-cu-black.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP08">Điện thoại Samsung Galaxy S9 Plus Nhật Bản</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>10250000</ins> <del>10950000</del>
                             </div>
                         </div>
                         <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                            <img src="/Content/img/x7-do.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP15">Điện thoại Nokia X7 2018</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>5450000</ins> <del>5950000</del>
                             </div>
                         </div>
                         <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                            <img src="/Content/img/xiaomi-redmi-note-7-12.jpg" class="recent-thumb" alt="">
+                            <h2><a href="http://localhost:54665/My/SingleProduct/?ID=SP19">Điện thoại Xiaomi Redmi Note 7 (RAM 4GB, 6GB)</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
-                            </div>
-                        </div>
-                        <div class="thubmnail-recent">
-                            <img src="/Content/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>4450000</ins> <del>5450000</del>
                             </div>
                         </div>
                     </div>
@@ -89,11 +90,11 @@
                     <div class="single-sidebar">
                         <h2 class="sidebar-title">Bài Viết Gần Đây</h2>
                         <ul>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
-                            <li><a href="#">Sony Smart TV - 2015</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP14">SĐiện thoại Nokia 7 Plus</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP13">Điện thoại Nokia X6 cũ (Fullbox)</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP12">Điện thoại Nokia X5 - 2018 (3GB/32GB, 4GB/64GB)</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP11">Điện thoại Samsung Galaxy Note FE Cũ</a></li>
+                            <li><a href="http://localhost:54665/My/SingleProduct/?ID=SP10">Điện thoại Samsung Galaxy Note 8 cũ (Trả Bảo Hành)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -114,35 +115,40 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="cart_item">
-                                            <td class="product-remove">
-                                                <a title="Remove this item" class="remove" href="#">×</a>
-                                            </td>
+                                        @foreach (SanPham sp in Model)
+                                        {
+                                            <tr class="cart_item">
 
-                                            <td class="product-thumbnail">
-                                                <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="/Content/img/product-thumb-2.jpg"></a>
-                                            </td>
+                                                <td class="product-remove">
+                                                    <a title="Remove this item" class="remove" href="#">×</a>
+                                                </td>
 
-                                            <td class="product-name">
-                                                <a href="single-product.html">Ship Your Idea</a>
-                                            </td>
+                                                <td class="product-thumbnail">
+                                                    <a href="#"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="@sp.Anh"></a>
+                                                </td>
 
-                                            <td class="product-price">
-                                                <span class="amount">£15.00</span>
-                                            </td>
+                                                <td class="product-name">
+                                                    <a href="single-product.html">@sp.TenSanPham</a>
+                                                </td>
 
-                                            <td class="product-quantity">
-                                                <div class="quantity buttons_added">
-                                                    <input type="button" class="minus" value="-">
-                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-                                                    <input type="button" class="plus" value="+">
-                                                </div>
-                                            </td>
+                                                <td class="product-price">
+                                                    <span class="amount"></span>
+                                                </td>
 
-                                            <td class="product-subtotal">
-                                                <span class="amount">£15.00</span>
-                                            </td>
-                                        </tr>
+                                                <td class="product-quantity">
+                                                    <div class="quantity buttons_added">
+                                                        <input type="button" class="minus" value="-">
+                                                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                        <input type="button" class="plus" value="+">
+                                                    </div>
+                                                </td>
+
+                                                <td class="product-subtotal">
+                                                    <span class="amount">@sp.DonGiaN</span>
+                                                </td>
+
+                                            </tr>
+                                        }
                                         <tr>
                                             <td class="actions" colspan="6">
                                                 <div class="coupon">
