@@ -9,7 +9,7 @@ namespace Website_BHDT_BTL_CNWEB_.Controllers
     public class MyController : Controller
     {
         // GET: My
-        public ActionResult Index()
+        public ActionResult Index(string username,string pass)
         {
             
             var model = new SanPhamF().SanPhams.ToList();
@@ -22,8 +22,8 @@ namespace Website_BHDT_BTL_CNWEB_.Controllers
         }
         public ActionResult Cart()
         {
-            var model = new SanPhamF().DSSP_KH().ToList();
-            return View(model);
+                var model = new SanPhamF().DSSP_KH().ToList();
+                return View(model);
         }
 
         public ActionResult SingleProduct(string ID)
@@ -51,7 +51,10 @@ namespace Website_BHDT_BTL_CNWEB_.Controllers
         {
             return View();
         }
-       
+        public ActionResult Login()
+        {
+            return View();
+        }
 
     }
 }
